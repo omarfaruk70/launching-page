@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(Launching_page_img/images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 10%;
+    position: relative;
+}
+.logo{
+    width: 220px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.content{
+    top: 40%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: white;
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+.content h1 span{
+    color: #ff3753;
+}
+.content button{
+    background: transparent;
+    padding: 12px 25px;
+    color: white;
+    border: 2px solid #fff;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.content button img{
+    width: 15px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.launching-time{
+    display: flex;
+}
+.launching-time div{
+    flex-basis: 150px;
+}
+.launching-time div p{
+    font-size: 60px;
+    margin-top: 14px;
+}
+.rocket{
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 3s linear infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    70%{
+        bottom: 70%;
+        opacity: 1;
+    }
+    100%{
+        bottom: 100%;
+        opacity: 1;
+    }
+}
