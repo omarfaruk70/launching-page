@@ -13,7 +13,18 @@ function countDown (){
     document.getElementById('hours').innerHTML = hours;
     document.getElementById('minutes').innerHTML = minutes;
     document.getElementById('seconds').innerHTML = seconds;
-
+    if(days < 10){
+        document.getElementById('days').innerHTML = '0' + days;
+    }
+    if(hours < 10){
+        document.getElementById('hours').innerHTML = '0' + hours;
+    }
+    if(minutes < 10){
+        document.getElementById('minutes').innerHTML = '0' + minutes;
+    }
+    if(seconds < 10){
+        document.getElementById('seconds').innerHTML = '0' + seconds;
+    }
     if(remainTime < 0){
         clearInterval(countDown)
         document.getElementById('days').innerHTML = '00';
